@@ -1,2 +1,12 @@
-# hazard-hunt
-Hazard Hunt is a survival treasure-hunting game where players collect gold across multiple locations while avoiding three relentless killers. Earn points for every gold collected and survive as long as possible using your three lives.
+# Hazard Hunt 💰⚠️
+
+Hazard Hunt is a survival treasure-hunting game where players must collect gold while avoiding three deadly killers.
+
+## Features
+- 3 Lives System
+- 3 Killers
+- Gold Collection
+- Score Tracking
+
+## How to Play
+Collect gold, avoid killers, and survive as long as possible.
