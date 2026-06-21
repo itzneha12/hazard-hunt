@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazard Hunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hazard Hunt</h1>
+        </header>
+
+        <div id="start-screen">
+            <div class="start-content">
+                <div class="start-title">Hazard Hunt</div>
+                <p>Embark on a Glowing Adventure!</p>
+                <button id="start-button">Start Game</button>
+
+                <div class="instructions">
+                    <h3>How to Play</h3>
+                    <ul>
+                        <li>Use arrow keys to move your character</li>
+                        <li>Collect gold treasures to earn points</li>
+                        <li>Avoid enemies to protect your health</li>
+                        <li>Collect cyan power-ups for bonus points</li>
+                        <li>Clear all treasures to advance to the next level</li>
+                    </ul>
+                </div>
+
+                <div class="game-elements">
+                    <div class="element">
+                        <div class="element-box player-box"></div>
+                        <span>Player</span>
+                    </div>
+                    <div class="element">
+                        <div class="element-box treasure-box"></div>
+                        <span>Treasure</span>
+                    </div>
+                    <div class="element">
+                        <div class="element-box enemy-box"></div>
+                        <span>Enemy</span>
+                    </div>
+                    <div class="element">
+                        <div class="element-box powerup-box"></div>
+                        <span>Power-up</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div id="game-container">
+                <canvas id="game" width="480" height="480"></canvas>
+            </div>
+
+            <div class="side-panel">
+                <div id="info-panel">
+                    <h3>Game Status</h3>
+                    <div id="info">Score: 0 | Health: 5 | Level: 1</div>
+                </div>
+
+                <div class="controls">
+                    <button id="restart-button">Restart Game</button>
+                    <button id="music-button">Mute/Unmute Music</button>
+                </div>
+
+                <div class="instructions">
+                    <h3>Controls</h3>
+                    <ul>
+                        <li><strong>Arrow Up:</strong> Move Up</li>
+                        <li><strong>Arrow Down:</strong> Move Down</li>
+                        <li><strong>Arrow Left:</strong> Move Left</li>
+                        <li><strong>Arrow Right:</strong> Move Right</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Hazard Hunt</p>
+        </footer>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="treasureSound">
+        <source src="https://freesound.org/data/previews/146/146725_2528776-lq.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="hitSound">
+        <source src="https://freesound.org/data/previews/353/353514_5121236-lq.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="game.js"></script>
+</body>
+</html>
